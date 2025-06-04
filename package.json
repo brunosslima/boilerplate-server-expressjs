@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,18 @@
     "url": "https://github.com/brunosslima/boilerplate-server-expressjs/issues"
   },
   "homepage": "https://github.com/brunosslima/boilerplate-server-expressjs#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.2",
+    "@types/mysql": "^2.15.27",
+    "@types/node": "^22.15.29",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
 }
