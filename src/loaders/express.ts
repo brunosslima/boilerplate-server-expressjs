@@ -8,8 +8,10 @@ import type { Express } from 'express';
 
 
 export default async ({app}: {app: Express}) => {
-    app.get('/status', (req, res) => { res.sendStatus(200).end(); return; });
-    app.head('/status', (req, res) => { res.sendStatus(200).end(); return; });
+    //app.get('/status', (req, res) => res.sendStatus(200).end());
+    //app.head('/status', (req, res) => res.sendStatus(200).end());
+    app.get('/status', (req, res) => { res.sendStatus(200).end() });
+    app.head('/status', (req, res) => { res.sendStatus(200).end() });
 
     app.enable('trust proxy');
 
